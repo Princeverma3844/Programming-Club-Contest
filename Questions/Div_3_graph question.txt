@@ -1,0 +1,20 @@
+Consider there are n buildings in our campus represented by an index from 1 to n. Now consider that c1 is the Lecture hall complex of our institute. All the ways on our campus are two-way. There is exactly one path from the LHC to each building. Their is mapping policy in our campus, that every building has a milestone which have the index of the next building on the way from that building to the Lecture Hall Complex, except for the LHC building.
+
+But now the authorities are deciding to shift the LHC from building c1 to c2. Due to this you need to insert new milestones in each building except for the new LHC and remove the previous milestone if it existed. So find the new values that need to be written on the milestones such that mapping policy of our campus is followed.
+
+Input
+
+The first line contains three space-separated integers n, c1, c2 (2 ≤ n ≤ 5·10^4, 1 ≤ c1 ≠ c2 ≤ n) — the amount of building in our campus, index of the old LHC and index of the new one, correspondingly.
+
+The following line contains n - 1 space-separated integers — the old representation of the milestones. For each building, apart from c1, there is given integer pi — index of the next building on the way from the building i to LHC. All the buildings are described in order of increasing indexes.
+
+Output
+
+Output n - 1 numbers — new representation of the milestones in the same format.
+
+input
+6 2 4
+6 1 2 4 2
+
+output
+6 4 1 4 2 
